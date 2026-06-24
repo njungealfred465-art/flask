@@ -1,5 +1,5 @@
 from flask import*
-import pymsql*
+import pymysql
 
 #intilialize the application
 app= Flask(__name__)
@@ -13,7 +13,7 @@ def sign():
     password=request.form["password"]
     phone=request.form["phone"]
     # connect to database
-    connect=pymsql.connect(host="root",username="localhost",password=""database="modcomalfred")
+    connection = pymsql.connect(host="root",username="localhost",password="",database="modcomalfred")
 
 
 
